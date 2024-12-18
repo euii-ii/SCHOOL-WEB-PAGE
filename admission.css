@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8a9db9, #dde1e7);
+
+    color: #333;
+}
+
+header.main-header {
+    background: url('images\ \(2\).jpeg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+header.main-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+header.main-header h1, header.main-header p {
+    z-index: 2;
+    position: relative;
+}
+
+header.main-header h1 {
+    font-size: 36px;
+}
+
+.cta-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 18px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.admission-form {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admission-form h2 {
+    font-size: 24px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    flex: 1;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-container {
+    text-align: center;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    header.main-header h1, footer.main-footer p {
+        font-size: 18px;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+}

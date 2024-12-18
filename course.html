@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Courses - Hibbing High School</title>
+    <link rel="stylesheet" href="course.css">
+    <link rel="icon" type="image/jpg" href="images (2).jpeg">
+    <script src="course.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="hero">
+            <h1>Discover Your Path at Hibbing High School</h1>
+            <p>Find the courses that match your interests and help shape your future!</p>
+            <button class="explore-btn" onclick="scrollToCourses()">Explore Courses</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="filter-section">
+            <label for="levelFilter">Filter by Level:</label>
+            <select id="levelFilter">
+                <option value="all">All Levels</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </section>
+
+        <section class="courses-list" id="courses-list">
+            <div class="course-card beginner" data-level="beginner">
+                <h2><i class="icon">&#128214;</i> Introduction to Mathematics</h2>
+                <p>Level: Beginner</p>
+                <p>Learn the basics of mathematics including addition, subtraction, multiplication, and division.</p>
+            </div>
+
+            <div class="course-card intermediate" data-level="intermediate">
+                <h2><i class="icon">&#128300;</i> Biology Basics</h2>
+                <p>Level: Intermediate</p>
+                <p>Study fundamental concepts of biology, including cellular structure, genetics, and ecosystems.</p>
+            </div>
+
+            <div class="course-card advanced" data-level="advanced">
+                <h2><i class="icon">&#128200;</i> Advanced Chemistry</h2>
+                <p>Level: Advanced</p>
+                <p>Explore in-depth chemical reactions, molecular composition, and laboratory techniques.</p>
+            </div>
+
+            <div class="course-card beginner" data-level="beginner">
+                <h2><i class="icon">&#128218;</i> English Literature</h2>
+                <p>Level: Beginner</p>
+                <p>Analyze and discuss classic literature from various cultures and time periods.</p>
+            </div>
+
+            <div class="course-card advanced" data-level="advanced">
+                <h2><i class="icon">&#128202;</i> Physics</h2>
+                <p>Level: Advanced</p>
+                <p>Dive deep into the principles of physics, including motion, forces, and energy.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Hibbing High School. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - Hibbing High School</title>
+    <link rel="stylesheet" href="admission.css">
+    <link rel="icon" type="image/jpg" href="images (2).jpeg">
+    <script src="admission.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Hibbing High School Admission</h1>
+        <p>Welcome! Start your journey by completing the form below.</p>
+    </header>
+
+   
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+
+    <main class="main-content">
+        <form action="#" class="admission-form" id="admission-form">
+            <section>
+                <h2>Admission Details</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <small class="error-message">Please enter your first name</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <small class="error-message">Please enter your last name</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <small class="error-message">Please enter your date of birth</small>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <small class="error-message">Please select your gender</small>
+                </div>
+            </section>
+            <section>
+                <h2>Contact Information</h2>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode">Zip Code:</label>
+                        <input type="text" id="zipcode" name="zipcode" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="2" required></textarea>
+                </div>
+            </section>
+
+            <section>
+                <h2>Educational Background</h2>
+                <div class="form-group">
+                    <label for="highSchoolName">High School Name:</label>
+                    <input type="text" id="highSchoolName" name="highSchoolName" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="graduationYear">Year of Graduation:</label>
+                        <input type="number" id="graduationYear" name="graduationYear" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gpa">GPA:</label>
+                        <input type="number" step="0.01" id="gpa" name="gpa" required>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Additional Information</h2>
+                <div class="form-group">
+                    <label for="interests">Interests and Hobbies:</label>
+                    <textarea id="interests" name="interests" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="why">Why do you want to join Hibbing High School?</label>
+                    <textarea id="why" name="why" rows="3"></textarea>
+                </div>
+            </section>
+            
+
+            <div class="form-group submit-container">
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+        </form>
+    </main>
+
+    
+    <section class="cta-section">
+        <h2>Why Choose Hibbing High School?</h2>
+        <p>With a history of excellence, state-of-the-art facilities, and a supportive learning environment, Hibbing High School prepares you for a bright future. Join us and be part of an inspiring community!</p>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Hibbing High School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
